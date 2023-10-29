@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var nombre = prompt("Introduce nombre");
+        var apellidos = prompt("Introduce apellidos");
+
+        do {
+            var salario = prompt("Salario numero con dos decimales");
+        } while (!parseInt(salario).toFixed(2));
+
+        var edad = prompt("Introduce la edad");
+        document.write("nombre " + nombre + " apellidos " + apellidos + " edad " + edad + " salario : ");
+        if (salario > 2000) {
+            document.write(salario);
+        } else if (salario > 1000 && salario < 2000) {
+            if (edad > 45) {
+                document.write(salario * 0.03 + salario);
+            } else {
+                document.write(salario * 0.10 + salario);
+            }
+        } else if (salario < 1000) {
+            if (edad < 30) {
+                document.write("1100 euros");
+            } else if (edad > 30 && edad < 45) {
+                document.write(salario * 0.03 + salario);
+            } else {
+                document.write(salario * 0.15 + salario);
+            }
+        }
+    </script>
+</body>
+
+</html>

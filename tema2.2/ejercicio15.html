@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var base= prompt("Introduce base");
+        var altura= prompt("Introduce altura");
+        for (var i = 1; i <= altura; i++) {
+           for (var j = 1; j <= base; j++) {
+            if(i == 1 || i==altura || j==1 || j==base){
+                document.write("* ");
+            } else{
+                document.write("  ");
+            }
+           }
+           document.write("<br>");
+        }
+    </script>
+</body>
+</html>
