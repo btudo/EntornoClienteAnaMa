@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let actual = new Date();
+      let fin = new Date(2024, 5, 30);
+      let resultado = fin - actual;
+      resultado = Math.floor(resultado / (24 * 60 * 60 * 1000));
+      document.write(resultado);
+    </script>
+  </body>
+</html>

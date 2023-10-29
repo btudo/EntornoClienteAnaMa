@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head> </head>
+  <body>
+    <input type="button" onclick="parar()" value="Detener" />
+
+    <script>
+      let temporizadorColor = setInterval(cambiarColor, 1000);
+      function cambiarColor() {
+        if (window.backgroundColor == "orange") {
+          document.body.style.backgroundColor = "blue";
+        } else {
+          document.body.style.backgroundColor = "orange";
+        }
+      }
+
+      function parar() {
+        clearInterval(temporizadorColor);
+        document.body.style.backgroundColor = "white";
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let resultado = confirm("Aceptas abrir una ventana nueva");
+      if (confirm) {
+        let nuevaVentana = window.open(
+          //para poder escribir en la ventana chica hay que poner la referencia
+          "otraventana.html",
+          "segundapag",
+          "width=200,height=20,top=500, left=500, scrollbars=yes,resizable=yes"
+        );
+      }
+      //Para poner el cursor en su interior
+      nuevaVentana.focus();
+    </script>
+  </body>
+</html>

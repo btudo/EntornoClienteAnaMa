@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var fecha = new Date();
+      var miCum = new Date("1999,3, 13");
+      document.write("Mi cumpleaños " + miCum.toLocaleDateString() + "<br>");
+      document.write("Fecha actual " + fecha.toLocaleDateString() + "<br>");
+      document.write("Año de mi cumnpleaños " + miCum.getFullYear() + "<br>");
+      document.write("Año actual " + fecha.getFullYear() + "<br>");
+      fecha.setFullYear(fecha.getFullYear() - 1);
+      document.write(fecha.toLocaleDateString() + "<br>  ");
+      document.write("año : " + fecha.getFullYear());
+      document.write("mes : " + fecha.getMonth());
+      document.write("año : " + fecha.getDate());
+    </script>
+  </body>
+</html>

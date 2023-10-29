@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <h2>Pagina secundaria</h2>
+  </head>
+  <body>
+    <input type="button" value="Boton1" onclick="Boton1()" />
+    <input type="button" value="Boton2" onclick="Boton2()" />
+    <input type="button" value="Boton3" onclick="Boton3()" />
+
+    <script>
+      function Boton1() {
+        document.body.style.backgroundColor = "blue";
+      }
+      function Boton2() {
+        window.opener.document.body.style.backgroundColor = "red";
+      }
+      function Boton3() {
+        window.close();
+        window.opener.close();
+      }
+    </script>
+  </body>
+</html>
