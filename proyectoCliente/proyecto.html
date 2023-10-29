@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="proyecto.css">
+   
+    <title>carrera</title>
+</head>
+<body>
+    
+    <div class="contenedor">
+        
+<img  id="tortuga" src="imagenes/tortuga.png" alt="tortuga">
+<img  id="pez" src="imagenes/pez-payaso.png" alt="pez-payaso">
+
+
+<div class="botonPrimero">
+<input type="button" id="boton1" name="boton1" value="COMENZAR" onclick="comenzar()">
+</div>
+<div class="botonSegundo">
+    <input type="button" id="boton2" name="boton2" value="EMPATE" onclick="iniciarCarreraEmpate()" >
+    <input type="button" id="boton3" name="boton3" value="CORRER" onclick="iniciarCarreraGanador()">
+    <input type="button" id="boton4" name="boton4" value="STOP" onclick="parar()">
+</div>
+</div>
+
+<script type="text/javascript" src="proyecto.js"></script> 
+</body>
+</html>

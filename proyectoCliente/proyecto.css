@@ -1,0 +1,65 @@
+.contenedor {
+    padding-top: 40px;
+    
+    background-color: #D7BDE2;
+    height: 110px;
+   
+}
+
+
+img#tortuga {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+}
+
+img#pez {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    margin-top: 50px;
+}
+
+
+.botonPrimero {
+    text-align: center;
+    margin-top: 200px;
+
+}
+
+.botonSegundo {
+    margin-top: 30px;
+    text-align: center;
+    cursor: pointer;
+
+
+
+}
+
+#boton1 {
+    background-color: #D2B4DE;
+
+    cursor: pointer;
+    font-size: 16px;
+
+
+
+}
+
+#boton2 {
+    background-color: #AED6F1;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#boton3 {
+    background-color: #ABEBC6;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#boton4 {
+    background-color: #FAD7A0;
+    cursor: pointer;
+    font-size: 16px;
+}
